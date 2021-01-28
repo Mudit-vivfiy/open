@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Montserrat;
+    src: url(/assets/font/Montserrat-Regular.ttf) format("truetype");    
+  }
+
+  @font-face {
+    font-family: PingFang;
+    src: url(/assets/font/PingFang_SC_Medium.ttf) format("truetype");    
+  }
+
+.PingFang{
+    font-family: PingFang,sans-serif!important;
+}
+
+body { 
+  margin: 0;
+  font-family: Montserrat,sans-serif!important;
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+.bg-purple-dark{
+   background-color: #663399!important;
+}
+
+.bg-purple-gradient-dark{
+    background: -webkit-linear-gradient(to right,#9F62C9, #663399);
+    background: linear-gradient(to right,#9F62C9, #663399);
+ }
+
+
+.text-purple-dark{
+    color: #663399!important;
+ }
+
+
+
+ .btn-purple {
+    color: #fff!important;
+    background: -webkit-linear-gradient(to right,#9F62C9, #663399);
+    background: linear-gradient(to right,#9F62C9, #663399);
+    border-color: #9F62C9!important;
+}
+
+.btn-purple:hover {
+    color: #fff!important;
+    background: #663399!important;
+    border-color:#9F62C9!important;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 0%)!important;
+}
+
+.btn-outline-purple {
+    color:  #663399!important;
+    border-color: #663399!important;
+}
+
+.btn-outline-purple:hover {
+    color: #fff!important;
+    background: #663399!important;
+    border-color: #663399!important;
+}
+
+.btn{
+    transition: color 0s ease-in-out,background-color 0s ease-in-out,border-color 0s ease-in-out,box-shadow 0s ease-in-out!important;
+}
+
+@media (min-width: 992px){
+    .pl-lg-55 {
+        padding-left: 5rem!important;
+    }
+
+    .pr-lg-55 {
+        padding-right: 5rem!important;
+    }
+}
+
+.mat-primary .mat-slider-track-fill, .mat-primary .mat-slider-thumb, .mat-primary .mat-slider-thumb-label {
+    background-color: #673ab7!important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.border-radius {
+    border-radius: 25px!important;
+}
+.font13{
+    font-size: 13px!important;
+}
+.line-h-1-25{
+    line-height: 1.25;
+}
+@media (min-width: 992px)
+{
+    .bg-image-p3{
+    background-image: url(/assets/images/circle.png);
+    background-repeat: no-repeat;
+    background-position-x: 130%;
+    background-position-y: center;
+    background-size: 69% 138%;
+    }
+}

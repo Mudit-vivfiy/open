@@ -1,0 +1,165 @@
+<div class="py-lg-5"></div>
+<div class="container-fluid">
+    <div class="row pb-lg-5 pb-3">
+        <div class="col-sm-12 col-md-12 col-lg-6 bg-image-p1">
+            <div class="pl-lg-55  mt-lg-5 pt-lg-5">
+            <div class="px-lg-4 mt-5-1">
+                <p class="h55 font-weight-bold line-h-1-25">We make it Super<br> Simple</p>
+                <hr class=" bg-dark mt-0 float-left w-25" [ngStyle]="{'padding':'2px'}">
+            </div>
+            <div class="mt-lg-5 bg-image-p2 pb-4">
+                <img src="/assets/images/urn_aaid_sc_US_32fd9b77-5ce0-49f6-93b9-c8ea63be5e08 (1).png" class="shadow border-radius w-75-1 mt-lg-4">
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 bg-image-p4 pb-lg-5">
+            <form [formGroup]="testForm" (ngSubmit)="submit()">
+            <div class="row pr-lg-55  mt-lg-5 pt-lg-5">
+                <div class="col-sm-12 col-md-8 col-lg-8 pr-lg-1">
+                    <div class="card border-0 shadow border-radius">
+                        <div class="card-header border-bottom-0 text-center h6 font-normal border-radius-header">Eligibility Calculator</div>
+                        <div class="card-body px-lg-4 px-4">
+                            <div class="col-sm-12">
+                                <label class="small font-weight-bold"> Monthly Income </label>
+                                <div class="h5 font-weight-bold">{{monthlyIncome.value  | currency:'INR' : 'symbol' : '0.0-0'}}</div>
+                                <mat-slider [min]="min" [max]="max" [step]="step" #monthlyIncome formControlName="monthlyIncome" (change)="monthlyIncomeEvent($event)" color="primary" class="w-100"></mat-slider>
+                                <div class="px-2"><span class="float-left small">&#8377; 100000</span><span class="float-right small">&#8377; 300000</span></div>
+                            </div>
+                            <div class="col-sm-12 mt-5">
+                                <label class="small font-weight-bold"> Monthly Expense </label>
+                                <div class="h5 font-weight-bold">{{monthlyExpense.value  | currency:'INR' : 'symbol' : '0.0-0'}}</div>
+                                <mat-slider [min]="min2" [max]="max2" [step]="step" #monthlyExpense formControlName="monthlyExpense" (change)="monthlyExpenseEvent($event)" color="primary" class="w-100"></mat-slider>
+                            </div>
+                            <div class="col-sm-12 mt-4">
+                                <label class="small font-weight-bold mb-0"> Repayment Teure </label>
+                                <div>
+                                    <mat-form-field class="w-100" floatLabel="never">
+                                    <mat-label>Select Repayment Teure</mat-label>
+                                    <mat-select formControlName="repayment">
+                                      <mat-option *ngFor="let repayment of repayments" [value]="repayment.value">
+                                        {{repayment.viewValue}}
+                                      </mat-option>
+                                    </mat-select>
+                                  </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mt-4">
+                                <span class="float-left small font-weight-bold">Do you have any existing loans?</span>
+                                <span class="float-right">
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" formControlName="existLoan" value="no" id="customSwitch1">
+                                        <label class="custom-control-label" for="customSwitch1"></label>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="col-sm-12 mt-5 mb-4">
+                                <label class="small font-weight-bold mt-5 mb-0"> EMI of existing loan (optional) </label>
+                                <div>
+                                    <mat-form-field floatLabel="never" class="w-100">
+                                    <input matInput type="number" formControlName="loanEmi" class="bg-white font-normal font16" min="0" max="10000000" placeholder="&#8377; 15000">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 pl-lg-1 align-items-center d-flex">
+                    <div class="card card-body border-0 shadow  bg-purple-dark text-white d-block text-center justify-content-center py-5 px-3 border-radius-rightSide mt-lg-0 mt-4">
+                        <div class="mt-4">
+                            <p class="text-light mb-0">Loan Amount</p>
+                            <p class="h5">&#8377; 1,00,000</p>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-light mb-0">Your EMI Will be</p>
+                            <p class="h5">&#8377; 15,000</p>
+                        </div>
+                        <button mat-button class="text-uppercase btn-outline-accent rounded-pill my-4 small w-75">GET MONEY</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+<div  class="bg-image  mt-lg-5 mt-3">
+<div class="container-fluid pl-lg-55 pr-lg-55">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-7">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-5 mx-lg-3 mx-0 px-0">
+                    <a href="/" class="card-link text-dark">
+                        <div class="card card-body border-0 shadow border-radius mt-lg-5 mt-0 bg-card-transparent mx-lg-0 mx-3">
+                        <img src="/assets/card-images/Get Paid Instantly.png" class="avatar">
+                        <p class="card-title font-weight-bold mt-3">
+                            Quick cash Disbursement
+                        </p>
+                        <p class="card-text font-weight-bold text-card-tarnsparent">
+                            Get terms loans that your business needs within 72 hrs
+                        </p>
+                    </div>
+                    </a>
+
+                    <a href="/" class="card-link text-dark">
+                        <div class="card card-body border-0 shadow border-radius mt-lg-5 mt-0 bg-card-transparent mx-lg-0 mx-3">
+                        <img src="/assets/card-images/Low interest rate.png" class="avatar">
+                        <p class="card-title font-weight-bold mt-3">
+                            Low-interest rate
+                        </p>
+                        <p class="card-text font-weight-bold text-card-tarnsparent">
+                            Achieve your financial goals with an amazing interest rate starting at 13% per annum
+                        </p>
+                    </div>
+                    </a>
+
+                    <a href="/" class="card-link text-dark">
+                        <div class="card card-body border-0 shadow border-radius mt-lg-5 mt-0 bg-card-transparent mx-lg-0 mx-3">
+                        <img src="/assets/card-images/Secure Payments.png" class="avatar">
+                        <p class="card-title font-weight-bold mt-3">
+                            Zero paperwork
+                        </p>
+                        <p class="card-text font-weight-bold text-card-tarnsparent">
+                            Get started Instantly by submitting only your basic details & bank statements
+                        </p>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-5 mx-lg-3 px-0 mx-0 mt-lg-0 mt-3 py-lg-10 offset-lg-1 offset-sm-0">
+                    <a href="/" class="card-link text-dark">
+                        <div class="card card-body border-0 shadow border-radius mt-lg-5 mt-0 bg-card-transparent mx-lg-0 mx-3">
+                        <img src="/assets/card-images/freelancer_feature_icon_6@1.5x.png" class="avatar">
+                        <p class="card-title font-weight-bold mt-3">
+                            Ace your business finances
+                        </p>
+                        <p class="card-text font-weight-bold text-card-tarnsparent">
+                            Manage banking, accounting & everything in between, on one platform
+                        </p>
+                    </div>
+                    </a>
+
+                    <a href="/" class="card-link text-dark">
+                        <div class="card card-body border-0 shadow border-radius mt-lg-5 mt-0 bg-card-transparent mx-lg-0 mx-3">
+                        <img src="/assets/card-images/urn_aaid_sc_US_32fd9b77-5ce0-49f6-93b9-c8ea63be5e08 (2).png" class="avatar">
+                        <p class="card-title font-weight-bold mt-3">
+                            Loan of fight COVID-19
+                        </p>
+                        <p class="card-text font-weight-bold text-card-tarnsparent">
+                           Zero EMI for first months on Back-to-Business of upto 1 lakh
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-5 align-items-center d-flex">
+            <div class="card card-body border-0 bg-transparent shadow-1 mt-lg-0 mt-3 border-radius-1">
+                <p class="h55 font-weight-bold line-h-1-25">Boost your business <br> with Open</p>
+                <hr class=" bg-dark mb-2 float-left w-15" [ngStyle]="{'padding':'2px'}">
+            <div class="mt-4"><p class="mb-0">Get your hands on a term loan that's <br> crafted for your business</p></div>
+            <div class="text-lg-left text-center">
+                <button mat-button class="text-uppercase btn-outline-accent rounded-pill shadow-sm border2 mt-5 small w-50-1"> Get an Open Account </button>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

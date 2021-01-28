@@ -1,0 +1,156 @@
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 0%)!important;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #673ab7!important;
+    background-color: #673ab7!important;
+}
+
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: #adb5bd!important;
+}
+
+.font-normal {
+    font-weight: 500;
+}
+
+.font16{
+    font-size: 16px;
+}
+
+.border2{
+    border: 2px solid;
+}
+
+.btn-outline-accent:hover {
+    color: #fff;
+    background-color: #442167;
+    border-color: #442167;
+}
+
+.btn-outline-accent {
+    color: #9b5fc6;
+    background-color: #fff;
+    border-color: #9b5fc6;
+}
+
+.border-radius-header{
+    border-radius: 25px 25px 0px 0px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+
+  @media (min-width: 992px)
+{
+  .py-lg-10 {
+      padding-top: 8rem!important;
+      padding-bottom: 8rem!important;
+  }
+}
+
+.w-15{
+    width: 15%;
+}
+
+
+.bg-card-transparent:hover{
+    background-color:#68349a8a!important;
+    color: white;
+}
+
+.bg-card-transparent:hover .text-card-tarnsparent{
+    color: #f3f3f3!important;
+}
+
+.text-card-tarnsparent{
+    
+    color: #6c757d!important;
+}
+.w-75-1 {
+    width: 100%!important;
+}
+
+.border-radius-rightSide{
+    border-radius: 25px;
+}
+
+.shadow-1 {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.border-radius-1{
+    border-radius: 25px;
+}
+.w-50-1 {
+    width: 75%!important;
+}
+.mt-5-1{
+    margin-top: 7rem;
+}
+.h55 {
+    font-size: 1.25rem;
+}
+@media (min-width: 992px)
+{
+    .bg-image{
+        background-image: url(/assets/images/sol_wave_bg.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: contain;
+    }
+    .bg-image-p1 {
+        background-image: url(/assets/images/blob-small.png);
+        background-repeat: no-repeat;
+        background-position-x: -6rem;
+        background-size: 50% 42%;
+        background-position-y: 4rem;
+    }
+    .bg-image-p2 {
+        background-image: url(/assets/images/accounting_dots.png);
+        background-repeat: no-repeat;
+        background-size: 50% 15%;
+        background-position-y: bottom;
+        background-position-x: 75%;
+    }
+    .bg-image-p4 {
+        background-image: url(/assets/images/accounting_dots.png);
+        background-repeat: no-repeat;
+        background-size: 43% 6%;
+        background-position-y: bottom;
+        background-position-x: 80%;
+    }
+    .w-75-1 {
+        width: 75%!important;
+    }
+
+    .w-50-1 {
+        width: 50%!important;
+    }
+
+    .border-radius-rightSide{
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    .shadow-1 {
+        box-shadow: 0 0rem 0rem rgba(0,0,0,0)!important;
+    }
+
+    .border-radius-1{
+        border-radius: 0px;
+    }
+
+    .mt-5-1{
+        margin-top: 0px;
+    }
+    .h55 {
+        font-size: 1.5rem;
+    }
+    
+}

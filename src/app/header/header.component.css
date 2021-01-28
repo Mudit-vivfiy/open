@@ -1,0 +1,27 @@
+#navbar #logo {
+    transition: 0.4s;
+  }
+.w-60{
+    width: 60%;
+}
+
+.text-purple:hover{
+  color: #663399!important;
+}
+
+.font-dark{
+  font-weight: 600;
+  border: 2px solid;
+}
+
+.font-dark:hover{
+  font-weight: 500;
+}
+
+@media (max-width: 991px)
+{
+    .bg-m-view{
+        background-color: white!important;
+    }
+
+}
