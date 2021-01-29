@@ -103,7 +103,7 @@
         background-image: url(/assets/images/sol_wave_bg.png);
         background-repeat: no-repeat;
         width: 100%;
-        background-size: contain;
+        background-size: cover;
     }
     .bg-image-p1 {
         background-image: url(/assets/images/blob-small.png);
